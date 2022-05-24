@@ -1,0 +1,11 @@
+2022-04-27 19:44:49 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11118 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-04-27 19:44:49 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-27 19:44:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.868 seconds (JVM running for 1.213)
+2022-04-27 19:44:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - App run...
+2022-04-27 19:44:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11152 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.627 seconds (JVM running for 0.907)
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - App run...
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-04-27 19:46:41 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices

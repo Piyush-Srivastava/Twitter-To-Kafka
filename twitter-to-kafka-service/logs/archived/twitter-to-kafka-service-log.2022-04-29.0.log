@@ -1,0 +1,778 @@
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 18777 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.468 seconds (JVM running for 0.725)
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - App run...
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2022-04-29 14:04:28 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-04-29 14:04:28 [main] INFO  t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-04-29 14:04:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2022-04-29 14:04:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2022-04-29 14:04:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Schedule Java Jazz hari Sabtu kok gak semenarik itu yak. Padahal biasanya Sabtu gongnya..
+2022-04-29 14:04:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sacriel: Looking for a spring refresh for your setup? Enter for a chance to win a NEW K70 RGB PRO Mechanical Gaming Keyboard! Courtesy…
+2022-04-29 14:04:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @I_Am_Spring_Day: I've said it once and I'll say it again. Never date a person who does nothing but brag about their opinions, put other…
+2022-04-29 14:04:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise スプパラ 美少年公演 お譲り先探しています。
+
+【日程】4/30
+【枚数】４連中２連
+【金額】2.0〜即決2.5/1枚
+【取引】当日手渡し
+
+該当名義/すり替え無し
+
+お心当たりの方は
+DMまでお願いいたします。
+
+#スプパラ譲 #美少年譲
+2022-04-29 14:04:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:04:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: Spring Halo 2022 Giveaway!
+
+- Follow me + @furryvrix 
+- Like + RT
+- Comment done
+
+Ends soon
+
+Extras in thread
+
+( Picture fro…
+2022-04-29 14:04:37 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:04:37 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: ซูมดูความจึ้งของโบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอ…
+2022-04-29 14:04:37 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:04:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text It's a cold and windy day in the city. Here are more spring flowers to brighten your spirits. 
+
+Spring flowers in NYC # 217 https://t.co/wsF44vGTqj
+2022-04-29 14:04:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @heather_maleake: At KFC hall tonight
+2022-04-29 14:04:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/4JkwJBMxHQ
+2022-04-29 14:04:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @beverleyturner: On @JeremyVineOn5 in spring 2020 I warned that the elderly were being taken back to care homes with covid symptoms. I w…
+2022-04-29 14:04:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:04:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @I_Am_Spring_Day: I've said it once and I'll say it again. Never date a person who does nothing but brag about their opinions, put other…
+2022-04-29 14:04:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:04:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Gaming_catala: Minecraft (Java Edition), Euro Truck Simulator 2, Dead Cells, Summoner's Mess, Lost Wing, Space Revenge, Mail Mole, Mini…
+2022-04-29 14:04:41 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:04:42 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @DTS_twts I kind of dont feel like doing the whole bacon and eggs thingy or waffles of whatever when it's spring, I eat that during fall/winter
+2022-04-29 14:04:44 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:04:44 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JITAEJAE: น้องยอร์ชเก่งอะ เรียนภาษาเกาหลีจากเพลง  Spring Day ด้วยย🥺💖
+
+#yorch_yongsin #ยอร์ชยงศิลป์  
+ https://t.co/iUmgt3dMMz
+2022-04-29 14:04:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:04:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text gaterhitung ujian dan skrg udah html css + java script. pala mau meledak dr bahasa 1 ke bahasa 5 dengan 2bln saja🙂
+2022-04-29 14:04:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ScottishEPA @BBCFarmingToday * in spring
+2022-04-29 14:04:46 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BelleriveFCJ: Liverpool’s Parent Network has produced the Spring edition of Liverpool’s Parenting Newsletter with information on servic…
+2022-04-29 14:04:47 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:04:48 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Last chance to enter for the April giveaway! ⬇️
+2022-04-29 14:04:48 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:04:49 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @qxianli: joe locke as charlie spring in heartstopper (2022) https://t.co/iezJDoXddA
+2022-04-29 14:04:49 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/fiIig9ZId4
+2022-04-29 14:04:50 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Loved this link: https://t.co/OVWX1Lu9EG. I found it here: https://t.co/c81LH0e06b #inlinkz #linkup
+2022-04-29 14:04:50 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:04:51 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text java入んねえ…
+2022-04-29 14:04:51 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Prof_NickTalley: Deadly. Temperatures top 47 degrees in India and Pakistan - and it’s only spring https://t.co/JHrwlAFGaT #climate #Cli…
+2022-04-29 14:04:52 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:04:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheRealCocoJ: Spring time glow ✨ https://t.co/fC33fs79lx
+2022-04-29 14:04:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #私だけのダービー
+いつも席を取るのに
+後輩を走らせ荷物を持ちました😆
+2022-04-29 14:04:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sorry guys but my brain craves dopamine and seratonin i cna only get from hanging out wiht people therefore we must go to kafka and get drunk
+2022-04-29 14:04:57 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:04:57 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @grantrod06061 highlights the “unrecognised problem “ and starts Day 2 of Scottish Society of Anaesthetists Spring Meeting.. @AnaesthesiaScot @dundeegas
+2022-04-29 14:04:57 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ian_hulf: Welcome to Friday April 29th 
+It was the first rush of colour this spring, Where park gardeners have done there thing. Now th…
+2022-04-29 14:04:57 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:04:57 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:04:58 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TUBE__Official: MICHIYA HARUHATA LIVE AROUND 2022
+🌸SPRING HAS COME ⁺ nextツアー🌸
+初日戸田公演まもなく開演！
+
+外はあいにくの雨模様ですが、
+何かを始める日は雨がよい👌
+とどこかで聞いた気が,,,…
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MattLeabeater: Australia braces for more wet weather with above-average rainfall predicted through winter and into spring - Guardian Au…
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I went for a leisurely stroll with Ryujin, and we strolled together to see the cherry blossoms blooming in this lovely spring. Ryujin and I took a ton of photographs because seeing the cherry blooms blossoming is wonderment. You folks ought to likewise see the cherry blossoms! 🌸 https://t.co/cOw5F9I5xH
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise You&美 お譲りします。
+
+【日時】5/1 18:00 夜公演 オーラス
+【枚数】2枚(4連中)
+【金額】〜即決6
+【取引】サイト通し
+
+Qゲート/美少年名義/ジャニアイ返金
+重複なしすり替えなし同行になります。
+ご希望の方は必要事項を明記の上、DMにてご連絡お願いいたします。
+
+#スプパラ譲
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: Spring Halo 2022 Giveaway!
+
+- Follow me + @furryvrix 
+- Like + RT
+- Comment done
+
+Ends soon
+
+Extras in thread
+
+( Picture fro…
+2022-04-29 14:05:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JRA_net: 5/29は #日本ダービー 
+／
+「 #私だけのダービー 」選手権開幕
+フォロー＆引用RTで105名様に豪華賞品が当たる！
+＼
+🎁 参加方法
+① @JRA_net をフォロー
+② プチ自慢できる“エピソード・モノ”と
+　[ #私だけのダービー ]をつけ…
+2022-04-29 14:05:01 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RichardFoxBC: Very fresh looking Small Tortoiseshell yesterday, enjoying a dandelion - surely the premier spring nectar source https://…
+2022-04-29 14:05:01 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SriramDalton: 1st Jharkhand science film festival, Loharddaga
+Official Selection
+
+Film : Spring Thunder
+Category : Feature Film 
+Durati…
+2022-04-29 14:05:01 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WinterBear_0: น้องยอร์ช​เรียนภาษาเกาหลี​จากเพลง​ Spring Day​ ของบังทัน​ แล้วนุแต่งตัวได้น่าร๊ากมากก 😍 #TraineeA​ #Trainee_A​ #Yorch_yon…
+2022-04-29 14:05:02 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 昔、某場所で見たキズナとワンアンドオンリーのレアなダービー馬共演が懐かしい。
+
+#私だけのダービー https://t.co/RI1Dz32Xk5
+2022-04-29 14:05:02 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WheatInnovation: We are 100% No-Till so 3' alleyways in disease nurseries and early observation trials have regular weed issues. Levi a…
+2022-04-29 14:05:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SmalhotraFC_: What time is it? Summertime!! 🌞🙌🏼
+Ain’t nobody rocking @ScottEyewear's Spring Summer '22 collection like @SidMalhotra and…
+2022-04-29 14:05:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 20+?
+2022-04-29 14:05:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Most: happy charlie spring's birthday to all who celebrate
+2022-04-29 14:05:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:05:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gainsforhs: rt if you love charlie spring 
+
+follow me + everyone who rts :))
+2022-04-29 14:05:04 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I think your adorable, even with a little dirt, when you get home a bath might be in your future!
+2022-04-29 14:05:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @__aloz__: Java ce week 💃🏻💃🏻🔊❤️❤️
+2022-04-29 14:05:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 【🎯eスポーツ大会情報】観戦勢向けまとめ
+
+◆NASEF JAPAN MAJOR League of Legends Tournament Spring 2022
+https://t.co/jnSIX0wSER
+
+◆Pokemon UNITE Challenge DAY
+https://t.co/zIhU4iIai9
+
+◆MINI PARK 2022in名古屋
+https://t.co/r6PGhbbR0y
+
+ゴールデンウィークはeスポーツを楽しもう！✨ https://t.co/eQaHZghLgP
+2022-04-29 14:05:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aiurskies_: "The two will go on a trip to Gangbuk on the same day. Walking around Seoul to find good ramen restaurants with a cool spri…
+2022-04-29 14:05:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Trading rhd, rh sets and items!!
+
+Rhd: 4.3mil
+Items: Og giant teddy, all val ( og's ), easter/spring items, summer, halloween, winter items 
+Sets: All sets ( including small sets )
+
+Looking for ROBUX!!
+NGF!!!!!!
+#royalehigh #robux #rhd #royalehightrades #robuxtrading
+2022-04-29 14:05:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: 20+?
+2022-04-29 14:05:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text little angel
+2022-04-29 14:05:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MoominOfficial: This beautiful limited edition figurine by Mitt&Ditt features Moomintroll and Snorkmaiden hugging ❤️ Order yours here 👉…
+2022-04-29 14:05:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Just joined https://t.co/cDVtUdZHWY Red Spring Giveaway, Win a CS:GO premium red load-out, Join here for free!
+2022-04-29 14:05:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SteveBrian5: Spring time in Brisbane. Heres some more of my flowers. https://t.co/2nW2OJvPNZ
+2022-04-29 14:05:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @papier_platz: A Space Walk 2022 Spring TOKYO
+4月30日〜5月1日
+東京都立産業貿易センター3F
+
+『お品書き』
+
+・おため紙（メモ帳）
+・おかわりしいる
+・彩玉ink5色（おまけ付き）
+・ぬりえのしいる
+・マスキングテープ…
+2022-04-29 14:05:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @HughRSOsborne: Spring is here and it's time to declutter!
+
+So I've thrown out all my old Marie Kondo books.
+
+(It's #FollowBackFriday to…
+2022-04-29 14:05:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Hold2LLC @bg19908 There is no “spring bump” in Hope-Simpson N temperate. This is something you’ve completely made up. https://t.co/J3kj0aau8x
+2022-04-29 14:05:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I Asked Short Kings How 'Short King Spring' Is Going https://t.co/oFZe80EiZB https://t.co/wrc9XWijvb
+2022-04-29 14:05:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @NorthKestevenDC: County views want to hear from you in their spring survey about roads, transport and highways.
+It takes about 10 minut…
+2022-04-29 14:05:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text The Zanesville Farmers Market will end its spring season Saturday at Weasel Boy Brewing, while the Muskingum County Blue Ribbon Farmer’s Market kicks-off its season at the fairgrounds. https://t.co/iTOnO859OR https://t.co/0LxqQ1tJO3
+2022-04-29 14:05:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 新卒のエンジニアに「入社までに学んでほしい」言語、1位Java、2位は? | マイナビニュース https://t.co/3NVAX93Kc8
+
+これ新卒に求めるなら新卒一律の年収じゃなくて中途の給与計算しなきゃダメでしょ……
+2022-04-29 14:05:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ランキング:19位 (車、バイク、自転車)
+
+アルコールチェッカー 高性能 アルコール検知器 高精度  飲酒運転防止  簡単 測定 アルコテ......(17:35)
+
+https://t.co/iCV0PAPtbM
+2022-04-29 14:05:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Mihoflowersy: It was the spring of 2022 in the Chernihiv region. And a grandma was selling some potatoes. https://t.co/YtIeJwDdUS
+2022-04-29 14:05:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/QEZJg7esed
+2022-04-29 14:05:10 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Thirsty Thursday hit a lil harder in the spring💀😭
+2022-04-29 14:05:10 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Mr&Mrs Wheatear, Cantick Head, Hoy one of my favourite summer visitors not only as they are beautiful birds full of character but you only find them in the type of place I like to be and Hoy is definitely one of those @Natures_Voice @RSPBScotland @orkneycom #spring #Hoy #Orkney https://t.co/bO9oI5dyr8
+2022-04-29 14:05:10 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Awesome Spring tutorial video by @MarcoBehler 👍 https://t.co/R0DhkOZuzg
+
+#Java #springboot
+2022-04-29 14:05:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:05:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Java 17 для тех, кто не следил. Часть 2: API: https://t.co/pXLMt5fLvN https://t.co/bHAP60NErI
+2022-04-29 14:05:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/zH3erwlXE6
+2022-04-29 14:05:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/azald6m89b
+2022-04-29 14:05:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I am a #backslidden #runner so today booted up @couch_5k with @jowhiley and started all over again…with these guys for company. Anyone else on a #spring fitness drive? https://t.co/52Ty7Gjpi6
+2022-04-29 14:05:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Loved this link: https://t.co/qqIpLNIzUp. I found it here: https://t.co/c81LH0e06b #inlinkz #linkup
+2022-04-29 14:05:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BtsKcharts: 2022.04.28 - Melon Daily chart  (@BTS_twt)
+
+#35 Dynamite (-1)
+#42 Butter (=)
+#55 PTD (-1)
+#66 Spring Day (-1)
+#76 My univer…
+2022-04-29 14:05:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @carebears: Sweet Sakura Bear is soaking up the splendor of #Spring with all of the beautiful cherry blossoms in full bloom! #ケアベア #cher…
+2022-04-29 14:05:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:05:14 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #royalehigh #rh #rhtc #royalehighgiveaway #royalehighgiveaways #royalehighgw #royalehighgws #rhgiveaway #rhgiveaways #rhgw #rhgws #spring22
+2022-04-29 14:05:15 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yorchdii: เทสดีจัง ฟังเพลง spring day ของบังทันซอนเบนิมด้วยย😭😭🫶🏻🦋 https://t.co/BhEf9SdB8F
+2022-04-29 14:05:16 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sogoomiya: 💖大宮キレイ24「美容部員おすすめの最新Spring Beauty」フォロー＆リツイートキャンペーン［第2弾］🎁
+
+抽選で3名さまに「M・A・C／フェイスパウダー」が当たる❣
+
+応募方法
+① @sogoomiya  をフォロー
+②このツイートをRT…
+2022-04-29 14:05:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Excited to be starting our spring learning hubs on mentoring with @CASMIorg for @UCL_ACO today. https://t.co/xuvN26Xmkh
+2022-04-29 14:05:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:05:18 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Once upon a time, Java the complicated object oriented language set sail for adventures. Java went home.
+2022-04-29 14:05:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CumberdickB: Nice out! 
+#spring https://t.co/cijG23ojlX
+2022-04-29 14:05:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TraineeAtrans: [220429] YouTube Update 
+
+Studying Korean with ‘Spring Day’ lyrics
+
+#YORCH #TraineeA @trainee_a https://t.co/eoVxNerC2O
+2022-04-29 14:05:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: เป๊ะปัง! โบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอลเล็ก…
+2022-04-29 14:05:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #royalehigh #royalehightrade #royalehightradings #royalehighcrosstrades #royalehighhalo #royalehighgiveaway #royalehighgiveaways #royalehightrades #royalehightrading #RoyaleHighHalos
+2022-04-29 14:05:20 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Remote Full Stack Developers wanted by one of the most well known Media / Publishing companies in Europe.
+
+Tech Stack (not all needed!): JavaScript, Node, AWS, IBM Cloud, PostgreSQL, MySQL, Elastic Search, Kafka, React, API Gateways, Docker, CDN, CloudFo…https://t.co/EuSYGIHEW2
+2022-04-29 14:05:20 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @kkir: Belter🏃🏻‍♀️🏃‍♂️🏃🏼
+2022-04-29 14:05:20 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:05:21 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @shinsuke_sugaya: Fessの構築で、JavaやElasticsearchのインストールにハマるなら、Docker Desktopを入れて、vm.max_map_countだけ設定して、docker composeで起動してほしいところではある。たぶん、き…
+2022-04-29 14:05:21 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @oriinte: spring
+#inART https://t.co/TummgKul9f
+2022-04-29 14:05:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @switch_doggo: "This is pretty much what me and spring are doing daily at home...except of course she gives me that cute smug look of he…
+2022-04-29 14:05:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lightermachis: spring ‘22 was actually a semester from hell
+2022-04-29 14:05:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Avantologist: spring
+#desert #arizona #nature #spring #bnwphotography #bnw https://t.co/NfxSA5GDrF
+2022-04-29 14:05:23 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:05:23 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @qxianli: joe locke as charlie spring in heartstopper (2022) https://t.co/iezJDoXddA
+2022-04-29 14:05:23 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:05:24 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SofiaPe86487699 Garden range list spring writer couple red describe.
+2022-04-29 14:05:24 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:24 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @simplebutgood: CSG ON THE LIVERPOOL PLAINS: Another strong turnout yesterday evening at Spring Ridge. The question on everyone’s lips:…
+2022-04-29 14:05:25 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 👏 ELF’s Spring General Assembly is in full swing in Warsaw! 🇵🇱
+
+We could not be happier to see many of our members in person. The meeting is chaired by our Vice President, MEP @svenja_hahn. https://t.co/64N8mrTyR9
+2022-04-29 14:05:25 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: 20+?
+2022-04-29 14:05:25 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @andreaanderegg: #MothersDaySale 25% Off everything 
+SHOP HERE: https://t.co/MbGD4i7Wam
+#mothersdaygifts #MothersDay #spring #artsale #s…
+2022-04-29 14:05:26 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:05:27 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Join us in spring to the most important event of solar wind storage H2 in 🇨🇦
+
+Ing Mauricio Eduardo Cabra 
+
+https://t.co/LYpby5M9q4 
+
+https://t.co/y0SOIuuPgj
+2022-04-29 14:05:27 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TUBE__Official: MICHIYA HARUHATA LIVE AROUND 2022
+🌸SPRING HAS COME ⁺ nextツアー🌸
+初日戸田公演まもなく開演！
+
+外はあいにくの雨模様ですが、
+何かを始める日は雨がよい👌
+とどこかで聞いた気が,,,…
+2022-04-29 14:05:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise 美少年公演求めております
+
+【日時】5/1 昼夜
+【枚数】2枚
+【金額】〜2.0
+【取引】要相談
+
+お心当たりのある方はお手数ですがdmまでご連絡をお願い致します。
+
+#美少年求 #スプパラ求 #美少年譲 #スプパラ譲
+2022-04-29 14:05:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @masazumi_koga: [IT] まだ低速なJavaベースのHadoop HDFSですか？HDFSをC/C++で書き換えた超高速MapRファイルシステムなら、マスターノード不要で初期導入台数を大幅に減らせます。MapRは、インドのマイナンバー基盤やBMW、メルセデ…
+2022-04-29 14:05:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aiurskies_: "The two will go on a trip to Gangbuk on the same day. Walking around Seoul to find good ramen restaurants with a cool spri…
+2022-04-29 14:05:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Siiristler: "Pes ettiğimden değil. Olmayacağını gözüme soka soka gösterdiğin için vazgeçtim."
+
+Franz Kafka
+2022-04-29 14:05:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GUESS: cool girl spring 😎 #LoveGUESS #GUESSEco
+
+(📸: gamze_ercel) https://t.co/mkNhD0gl7n
+2022-04-29 14:05:29 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:29 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:30 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:05:30 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SjamaanN Hi from Yogyakarta Java Indonesia #yogyakarta
+2022-04-29 14:05:30 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BtsKcharts: 2022.04.28 - Melon Daily chart  (@BTS_twt)
+
+#35 Dynamite (-1)
+#42 Butter (=)
+#55 PTD (-1)
+#66 Spring Day (-1)
+#76 My univer…
+2022-04-29 14:05:32 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/5KGp0bIxPv
+2022-04-29 14:05:32 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Hilde57293257: #ThePhotoHour #StormHour #Nature #NaturePhotography #naturelover #Blossom #Spring #walk 🚶‍♀️🌞 #TuesdayMotivaton Malle Be…
+2022-04-29 14:05:32 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @misskloss: 220429 #TENxGDC #TEN 
+The nice senior of the crew is coming soon! With a gentle tone to point out your shortcomings, spring…
+2022-04-29 14:05:32 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BTSarmy4ever94: .@BTS_twt's "Spring Day" (2017) rises to #55 (+5) on MelOn Top 100 Chart at 3PM KST.🇰🇷 https://t.co/mDGsVzuiUD
+2022-04-29 14:05:32 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dobbies: However you garden, Spring It On this Bank Holiday weekend 💪 To get you started, we've got 4 x £50 Dobbies gift cards to give…
+2022-04-29 14:05:33 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @k_pawlowska: #goodmorning 😊 Have a very nice day🍀
+
+The #weekend is on the horizon ... the countdown can slowly begin. And since the wea…
+2022-04-29 14:05:34 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yolanda315732: #原神新春会 #genshin #洛天依 
+genshin spring festival～
+参与的曲绘，梦幻联动🎉 https://t.co/jPsa0X6ZYC
+2022-04-29 14:05:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PbPammie Welcome in the Spring and all that 😈☺️👍🏼😘
+2022-04-29 14:05:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @COIHS_: We're delighted to announce @COIHS_ Spring programme: **Saturday 7 May** (online).
+
+Papers by Prof. Colm Lennon (@MaynoothHist)…
+2022-04-29 14:05:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #SeasonalTokens #CryptoMining #Cyclicallnvesting #BTC 
+Website: https://t.co/onXHTvLLBr
+Discord: https://t.co/uZOsqNwkDz
+2022-04-29 14:05:35 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yorchdii: เทสดีจัง ฟังเพลง spring day ของบังทันซอนเบนิมด้วยย😭😭🫶🏻🦋 https://t.co/BhEf9SdB8F
+2022-04-29 14:05:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @HelstonFloraDay: Changes and additions as Helston Flora Day finally returns: full details https://t.co/ciq05vkA91 #helston #Floraday202…
+2022-04-29 14:05:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @oriinte: spring
+#inART https://t.co/TummgKul9f
+2022-04-29 14:05:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @EWRairport: We’re just trying to get through this dynamite spring day in Newark and that’s all we’re going to say. 😉✌️#BTSARMY
+2022-04-29 14:05:36 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @NC_eagle: Opening night for our NCHS spring musical “The Nifty Fifties, A Musical Tribute to the 1950’s” is tomorrow, Fri., April 29. D…
+2022-04-29 14:05:37 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @NetflixBrasil: HOJE É ANIVERSÁRIO DO CHARLIE SPRING! 🥳🍂 https://t.co/TLftIrFo3H
+2022-04-29 14:05:37 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AppTropicals: Expect an explosion of flowers when Wilsonara Hilo Firecracker ‘Lucky Strike’ comes into bloom. #orchids #flowers #spring…
+2022-04-29 14:05:38 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:38 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:05:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CryptoTownEU: 🚀 Airdrop: Univers
+💰 Value: 312,50 $VRS
+👥 Referral: 93,75 $VRS
+📒 Partnership: Atelier Daruma, Veriori, Spring Legal, Orbi…
+2022-04-29 14:05:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Studying Korean with ‘Spring Day’ lyrics.
+
+- @YORCHYONGSN https://t.co/NGLFaKIIX1
+2022-04-29 14:05:39 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: Spring Halo 2022 Giveaway!
+
+- Follow me + @furryvrix 
+- Like + RT
+- Comment done
+
+Ends soon
+
+Extras in thread
+
+( Picture fro…
+2022-04-29 14:05:40 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GALLERIA_GM: ／
+#RAGE  #VALORANT 2022 Spring⚡
+ペアチケットが当たる！
+プレゼントキャンペーン🥳
+＼
+
+抽選で5️⃣名様に 5/7(土) or 5/8(日) の
+入場ペアチケット(2名様分)をプレゼント🎁
+
+✅応募条件
+・@GA…
+2022-04-29 14:05:41 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sunosoku_info: 6/17発売「Eye-Ai＋ Vol.3」
+
+【特集】Snow Man
+『滝沢歌舞伎ZERO 2022』
+『第34回 マイナビ東京ガールズコレクション 2022 SPRING/SUMMER』
+
+▼予約受付中
+https://t.co/Mx7…
+2022-04-29 14:05:42 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @EurLiberalForum: 👏 ELF’s Spring General Assembly is in full swing in Warsaw! 🇵🇱
+
+We could not be happier to see many of our members in…
+2022-04-29 14:05:42 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GRL_official: 2022 Spring&Summer
+齋藤飛鳥さん（乃木坂46）💋
+
+👇着用アイテムはこちら👇
+https://t.co/A3LnEl2242
+
+#齋藤飛鳥 #あしゅ #乃木坂46 #GRL #グレイル https://t.co/VVrMqQ…
+2022-04-29 14:05:42 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: เป๊ะปัง! โบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอลเล็ก…
+2022-04-29 14:05:43 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:05:43 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @boomshanker61: This is the spring without end
+This is the summer of malcontent
+This is the winter of your mind
+#FallFriday The Fall - F…
+2022-04-29 14:05:43 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KuntzOwen: Honor to be a part of this group and team! #skodoane🐯
+2022-04-29 14:05:44 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:05:44 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TraineeAtrans: [220429] YouTube Update 
+
+Studying Korean with ‘Spring Day’ lyrics
+
+#YORCH #TraineeA @trainee_a https://t.co/eoVxNerC2O
+2022-04-29 14:05:44 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @HarrietGriffey: Completely brilliant Spring party @WIJ_UK @OctoberLondon supporting, championing & mentoring women in journalism. And g…
+2022-04-29 14:05:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @EWRairport: We’re just trying to get through this dynamite spring day in Newark and that’s all we’re going to say. 😉✌️#BTSARMY
+2022-04-29 14:05:45 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @qmgs1554: Read the Spring Term edition of our student produced Queen Mary's observer; including stories on Speech Day, the @OrwellYouth…
+2022-04-29 14:05:46 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text By the spring of 1512, the English declared war on France, and naval officer Sir Edward Howard was appointed to command an eighteen-ship fleet against the French army. But more is needed to corroborate this, so the question lingers!
+2022-04-29 14:05:46 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/NFZsq6HNBW
+2022-04-29 14:05:46 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Easily provide each http-client with just the right messageformat using #HttpMessageConverters. In my latest blog post I will show you how to use and how to extend Spring's message converters to suit your needs. https://t.co/csvYDZo2bo
+2022-04-29 14:05:47 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:47 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TraineeAtrans: [220429] YouTube Update 
+
+Studying Korean with ‘Spring Day’ lyrics
+
+#YORCH #TraineeA @trainee_a https://t.co/eoVxNerC2O
+2022-04-29 14:05:47 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CurlyQ42: Miso vegetable #soup with tofu, ginger, garlic, shallots, spring onions, carrots, celery, mushrooms, red peppers and black pe…
+2022-04-29 14:05:48 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @thungluing12 @thuyquan1231 @ThaoPhuong5964
+2022-04-29 14:05:48 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:05:49 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:05:49 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Rumi_Quote: Stars burn clear all night. Do that yourself, and a spring will rise in the dark with water your deepest thirst is for.
+2022-04-29 14:05:50 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: ซูมดูความจึ้งของโบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอ…
+2022-04-29 14:05:51 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:51 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gumayusing: Chat: Gumayusi is singing a farewell song
+Keria: (laughs) what is with the farewell song kekeke
+Keria: No but it's not stov…
+2022-04-29 14:05:52 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Last 6 higher chance spots!!
+2022-04-29 14:05:54 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:54 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @hrtstoppermoots: RT IF YOU LOVE JOE LOCKE AS CHARLIE SPRING
+
+follow everyone who rts 🍂 https://t.co/4OwmsAbEGE
+2022-04-29 14:05:54 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @motomura_nobuko: ４月２８日、一般社団法人Springの皆様のお話を　＃山添拓　参議院議員と伺いました。
+
+Springの皆様は、 性被害当事者が生きやすい社会の実現を目指す当事者を中心とした団体。
+
+性犯罪刑法改正についてのご要望をお聞かせいただきまし…
+2022-04-29 14:05:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AllanRadcliffe: I'm delighted to be part of Spring Stories @bbcradio4. My new short story Winter Kept Us Warm is beautifully read by @M…
+2022-04-29 14:05:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise お譲りいたします
+
+【日時】4/30 
+【枚数】2枚(バラ可)
+【金額】2.5のみ
+【取引】要相談
+
+初期当選/該当名義/Lゲート/4連×2名義 2番手
+連番内での座席選択不可
+
+お心当たりある方は必要事項を明記のうえ
+DMまでお願いいたします
+
+#美少年譲 #スプパラ譲
+2022-04-29 14:05:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SherryJ86291671 Garden range list spring writer couple red describe.
+2022-04-29 14:05:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @torisprjngs: i’m sorry but the idea that barely fifteen year old charlie spring believes his existence is an inconvenience to the peopl…
+2022-04-29 14:05:55 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:05:56 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/RwjIE3SWh6
+2022-04-29 14:05:56 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise 美少年公演
+同行者探しております
+
+【日時】ガイシ 5/1 12:30 昼
+【枚数】2枚 (4連中)
+【金額】即決3.2
+【取引】要相談
+
+Cゲート
+初期当選､該当名義､すり替えなし
+
+希望額､担当､年齢明記の上ご連絡下さい
+
+ #スプパラ  #美少年  #スプパラ譲 #美少年スプパラ #美少年譲
+2022-04-29 14:05:56 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: Last 6 higher chance spots!!
+2022-04-29 14:05:58 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @zxlenegws: Spring 2020 Halo Giveaway!
+
+- Follow me + @diormination 
+- Like + RT
+- Comment done! 
+
+- Extras in thread https://t.co/8JNZM…
+2022-04-29 14:05:58 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 美少年 Spring Paradise
+
+【譲】愛知 4/30 17:30 4連中の1連
+
+【金額】要相談
+TDCの那須うちわ譲れる方多少お値下げ可能です
+
+Lゲート重複すり替えなし同行初期当選該当名義変更ボタンあり
+※那須・金指担以外でお願いします。
+#スプパラ譲 #スプパラ求 #スプパラ交換 #美少年譲 #美少年求 #美少年交換
+2022-04-29 14:05:58 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:05:59 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FairfaxCountyPD: #MISSING ENDANGERED JUVENILE: 14yo Mariam Chlaihi, seen last night in 3400 block of Spring Lane, Falls Church. 5’7”,11…
+2022-04-29 14:06:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Almost may and still waking up to 7 degrees! 
+Where's the spring?! https://t.co/mXr9RlQVc0
+2022-04-29 14:06:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:06:00 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AmyGoohsHard: Congratulations to “One, Two, Team Two” on their Spring Water Polo Championship game victory! #VikingDiff @PCSDViking @Vi…
+2022-04-29 14:06:01 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @helencfarrell: Join us for a spring lunch in the piazza https://t.co/rJwduM9LuI
+2022-04-29 14:06:01 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @surashite: Kafka Hibino 
+
+#怪獣 #KaijuNo8 #ไคจู #Manga #イラスト https://t.co/HZt2jGjt9g
+2022-04-29 14:06:02 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @shii_jffsu: Spring Paradise スプパラ 
+美 少年　ガイシ
+チケットを探しております
+
+【求】   名古屋 4/30 ゲートLのみ
+【枚数】1枚
+
+どうしても行きたいのでお願いします🥺
+
+#美少年求 #スプパラ求 #美少年譲 #スプパラ譲
+2022-04-29 14:06:02 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:06:02 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @misskloss: 220429 #TENxGDC #TEN 
+The nice senior of the crew is coming soon! With a gentle tone to point out your shortcomings, spring…
+2022-04-29 14:06:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Web3foundation: Tune into #Chainlink Spring ‘22 Hackathon now to hear W3F's @DrW3RK speak about @Polkadot Parachains and @substrate_io.…
+2022-04-29 14:06:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring https://t.co/8Wq0kVzb4M
+2022-04-29 14:06:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:06:03 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:06:04 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:06:04 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:06:04 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cosychey: 🌷 anyone care for some tea?🌷
+
+#gamingsetup #spring https://t.co/qADL6R6jTh
+2022-04-29 14:06:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 私は「ラブカレアワード2022 Spring～輝くティアラを愛するキミに～」に参加します。「天下統一恋の乱 Love Ballad」でボルパス連携済みです。 #ラブカレアワード #ボル恋
+2022-04-29 14:06:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SmalhotraFC_: What time is it? Summertime!! 🌞🙌🏼
+Ain’t nobody rocking @ScottEyewear's Spring Summer '22 collection like @SidMalhotra and…
+2022-04-29 14:06:05 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Recent temperatures may feel like we have regressed back towards winter but spring is definitely here in Bromley's parks. Why not get out and enjoy nature this bank holiday weekend? https://t.co/YE2GVl8Oqy
+2022-04-29 14:06:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Ioverspring: yes nick nelson is perfect boyfriend material but you know who else is. CHARLIE SPRING!!!!!
+2022-04-29 14:06:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:06:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text European Testing week spring 2022
+Asa Milano in occasione di #ETW2022 ha aperto le 
+prenotazioni per il test rapido #HIV / #sifilide presso la propria sede di via Arena 25 a Milano: Gratuito, sicuro e con esito immediato. 
+https://t.co/sS6YNvkInm
+https://t.co/LeKoW9h1jH https://t.co/TBf3hNBCzE
+2022-04-29 14:06:06 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text relatable content
+2022-04-29 14:06:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Natural_habitok: Fun fact: Male Frogs croak to attract a mate. It is especially common to hear frogs croaking during the spring at nigh…
+2022-04-29 14:06:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Garden range list spring writer couple red describe. https://t.co/au0p0xAx99
+2022-04-29 14:06:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YorchYongsin_TH: [220429] Trainee A YouTube update
+
+   “ เรียนภาษาเกาหลี จาก เพลง “Spring Day ”
+
+🔗 :  https://t.co/qZ0mgDAxD6
+
+  #요치 #Y…
+2022-04-29 14:06:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KvotheOf: good morning! spring is here 😍 https://t.co/7HKhxfWgyx
+2022-04-29 14:06:07 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @torisprjngs: i’m sorry but the idea that barely fifteen year old charlie spring believes his existence is an inconvenience to the peopl…
+2022-04-29 14:06:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MattLeabeater: Australia braces for more wet weather with above-average rainfall predicted through winter and into spring - Guardian Au…
+2022-04-29 14:06:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise スプパラ 美少年公演 お譲り先探しています。
+
+【日程】4/30 
+【枚数】2連  
+【金額】～ 即決2.7
+【取引】要相談
+
+全てＬゲート、ランダム配布です
+金額、年齢、取引方法を記載の上DMへご連絡お願い致します。
+#スプパラ譲 #美少年譲
+2022-04-29 14:06:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: ซูมดูความจึ้งของโบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอ…
+2022-04-29 14:06:08 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング：15位❗(マザーボード)
+
+「■X570 Pro4 X570-Pro4」
+メーカ:ASRock
+
+価格:¥20,889✨
+🔥売り切れ間近🔥(17:36)
+
+https://t.co/iYWoVIBapF
+2022-04-29 14:06:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @UONBizTeam: Join us for our Spring Networking Extravaganza💐, giving you the opportunity to boost your business growth and expand your n…
+2022-04-29 14:06:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:06:09 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Cover spring day มาแน่ ถ้ามาจริงร้องไห้แน่ เนื้อเพลงก็ดี ความหมายดี เพลงเพราะ เสียงยอร์ชน่าจะเข้าสุดๆเลย😭😭✌🏻🙏🏻 https://t.co/ei0jnzFKKt
+2022-04-29 14:06:10 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: เป๊ะปัง! โบว์ เมลดา และ พีพี กฤษฏ์ ที่ป๊อปอัพสโตร์ครั้งแรกในประเทศไทยของ @dolcegabbana ณ เซ็นทรัลเอ็มบาสซี พร้อมคอลเล็ก…
+2022-04-29 14:06:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @thingskatedid It feels fine about Java though, no? Aren't conversation like:
+
+- "I do Java"
+- "lol, I hate Java"
+- "lol me too"
+2022-04-29 14:06:11 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cheeky_cherry1: Loving these warm sunny spring days ☀️🧡🌤️ https://t.co/8N1ohRbV1p
+2022-04-29 14:06:12 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 😍👍🥰🦋🎵🎧🎶❤️👏
+
+https://t.co/eDIOi1vJIJ
+
+Studying Korean with ‘Spring Day’ lyrics #Shorts https://t.co/1qpXoRwhb5 來自 @YouTube
+2022-04-29 14:06:12 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:06:12 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CryptoTownEU: 🚀 Airdrop: Univers
+💰 Value: 312,50 $VRS
+👥 Referral: 93,75 $VRS
+📒 Partnership: Atelier Daruma, Veriori, Spring Legal, Orbi…
+2022-04-29 14:06:12 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @samenoplinks: “Ontwaakt, leiders op links! Hou op met jullie versnipperde beuzelarijen. Spring over de eigen schaduw en die van twijfel…
+2022-04-29 14:06:12 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Charlie Spring stan account <3 https://t.co/nNUwpsZUVc
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text completely avoid eachother
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ODYSTAFF: ＜当日券情報＞
+
+Hello! Project 2022 Spring CITY CIRCUIT｜千葉県文化会館　大ホール
+https://t.co/x1aThyPCMO
+
+4/30(土)
+①開場14:00/開演15:00
+②開場17:30/開演18…
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: 📸สแนปนิวลุคของ 'พีพี' จาก #dolcegabbana Spring/Summer2022 สวมเสื้อเชิ้ตพิมพ์ลายกราฟฟิกโลโก DG บวกกับเกางเกงขายาวลวดลายสะดุด…
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text And then comes winter. The falling snow covers all sins. And spring eventually comes, melting the snow and imposing all punishments.
+~ Setsuna and/or Kitahara
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RichardFoxBC: Very fresh looking Small Tortoiseshell yesterday, enjoying a dandelion - surely the premier spring nectar source https://…
+2022-04-29 14:06:13 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @hatano_official: MANKAI STAGE『A3!』ACT2! ～SPRING 2022～、ライブ配信で見させて頂きました‼︎
+記憶にあるストーリーなのに、舞台ならではの新鮮な感動がありました！
+千景さんスマートでかっこよかったぁ〜‼︎
+時間を忘れて楽し…
+2022-04-29 14:06:14 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aiurskies_: "The two will go on a trip to Gangbuk on the same day. Walking around Seoul to find good ramen restaurants with a cool spri…
+2022-04-29 14:06:15 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @iD7Mng_Ogami: 【ゲーム情報】本日4/28～5/8にて、『ŹOOĻ LIVE 2022 SPRING FESTIVAL !!!!』イベント開催中！
+報酬のSSR ŹOOĻ[SPRING FESTIVAL !!!!]をGETしよう！
+ぷちなな姿のRabiTVで…
+2022-04-29 14:06:15 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vlffmays: ยอร์ชเรียนภาษาเกาหลีจากเนื้อเพลง spring day ของ bts ด้วย🥹 https://t.co/EWX1eNKoQL
+2022-04-29 14:06:16 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @hatano_official: MANKAI STAGE『A3!』ACT2! ～SPRING 2022～、ライブ配信で見させて頂きました‼︎
+記憶にあるストーリーなのに、舞台ならではの新鮮な感動がありました！
+千景さんスマートでかっこよかったぁ〜‼︎
+時間を忘れて楽し…
+2022-04-29 14:06:16 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @osaaaaabpm: 2022.04.29 @渋谷DIVE
+.BPM Spring Tour'22「Sunny Side Up」
+
+#dotBPM
+#ドットビーピーエム
+#ドット写真館
+#ドット春ツアー
+#高任芹奈
+#天野ひろこ
+#源有紀子
+#宮村寧々
+#七瀬汐里 h…
+2022-04-29 14:06:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @iD7Mng_Ogami: 【ゲーム情報】SSR[SPRING FESTIVAL !!!!]衣装の限定レアオーディションが開催中です！
+有償限定では、悠くん、巳波くんがピックアップ中です。ぜひチェックしてくださいね！
+#アイナナ https://t.co/HjO13rx…
+2022-04-29 14:06:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text In the days of java phones (Noka C1, Xpress Music etc), I watched compilations of Ronaldo and Messi on my phones.
+Fast forward to more than 10 years later, we are still watching their compilations. Their longevity is insane
+2022-04-29 14:06:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 虎翔 廻🐯🏃@Springはあげぽよのラジオ配信を #IRIAM で視聴中！ https://t.co/wNTuSEZESk
+2022-04-29 14:06:17 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @chitaglorya__: giveaway 75$ | 1,050,000 IDR
+
+-- rt & rt like quoted tweet!
+
+ends in 5 hours good luck 🍒
+2022-04-29 14:06:18 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nicolawriting: As sad as it is beautiful ... add in the display flights (spring & winter) & that wild, looping, unearthly voice ... wha…
+2022-04-29 14:06:18 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 5 Best Stockpots You Need For Your Spring Summer Cooking https://t.co/0xZhTqfRpM
+2022-04-29 14:06:18 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @VenetiaJane: In old folklore the cowslip’s pendulous blooms were likened to a bunch of keys. In Norse legend they were said to be sacre…
+2022-04-29 14:06:18 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AddisZeybe: This year’s Fiche Chambalala is observed uniquely as it is the first celebration since Sidama became the tenth regional sta…
+2022-04-29 14:06:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text heartstopper charlie spring nick nelson elle argent ben hope tao tara victoria harry #Heartstopper #charlie #NICKNELSON #nick #HeartstopperNetflix #HarrysHouse  #HarryStyles harry styles https://t.co/orWRbXhdWU
+2022-04-29 14:06:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @LoveSongs4Peace: Sakura Blossoms Over A River And Bridge In Spring Evening, Japan https://t.co/K5WcMWvrsx
+2022-04-29 14:06:19 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring into Summer! Add some colour to your bathroom project with our Brilliance acrylic bathroom panels! Quicker to install than tile and much easier to clean! 
+
+Take a look at our Brilliance range here - https://t.co/rYwsNMQeLP
+
+#gobolder #bathroomdecor #bathroomtrade https://t.co/wbDhhKYKEh
+2022-04-29 14:06:20 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nickysglow: 🍂 ICONS DO CHARLIE SPRING PARA ORGANIZAR SEU PERFIL !! https://t.co/MfTWP9XwTf
+2022-04-29 14:06:21 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TUBE__Official: MICHIYA HARUHATA LIVE AROUND 2022
+🌸SPRING HAS COME ⁺ nextツアー🌸
+初日戸田公演まもなく開演！
+
+外はあいにくの雨模様ですが、
+何かを始める日は雨がよい👌
+とどこかで聞いた気が,,,…
+2022-04-29 14:06:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 🥹🤍
+2022-04-29 14:06:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @roseannoe spring roll??
+2022-04-29 14:06:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yorchdii: เทสดีจัง ฟังเพลง spring day ของบังทันซอนเบนิมด้วยย😭😭🫶🏻🦋 https://t.co/BhEf9SdB8F
+2022-04-29 14:06:22 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mintmag_th: ส่องลุคปังของสองเซเลบฯ 'พีพี-โบว์' ที่โคจรมาเจอกันในโททัลลุคลวดลายสีสันจาก #dolcegabbana Spring/Summer2022 พร้อมลุยเจิมป๊อป…
+2022-04-29 14:06:23 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 【交換/譲渡】
+あんさんぶるスターズ!! フィーチャースカウト缶バッジ［2020 SPRING］-Idol Side-  1box
+
+求：茨or440円
+譲：画像参照
+
+※仕事の関係上、都内手渡し(土日祝のみ)とさせて頂いております。
+難しい条件ではありますが、ご検討よろしくお願いします🙇‍♀️ https://t.co/Jsc8e4RCVu
+2022-04-29 14:06:24 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DonkeySancIre: This Spring, we welcomed this sweet little foal. 🌺💗
+
+In 2021, her mother was part of a large rescue operation. Both mare…
+2022-04-29 14:06:25 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SquirrelsFlow: 🐿Squirrels Flow (@squirrelsflow), the hottest project of this Spring! Here’s why:
+
+🔥 Pre-Sale sold out in the matter of…
+2022-04-29 14:06:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Valleycats open up spring training at Joe Bruno
+https://t.co/hihEAObB4h https://t.co/dqG4YQDieA
+2022-04-29 14:06:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @byakugun: アイナナの「ŹOOĻ LIVE 2022 SPRING FESTIVAL!!!!」イベのドロップ効率まとめ。
+多い順で↓
+ポイギャン 赤消し(160)
+BBB 赤消し(149)
+ワンオク 赤消し(148)
+LOOK 赤消し(143)
+4-ROAR 赤…
+2022-04-29 14:06:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sharat_Chander: A must-watch for all #Java developers.
+
+Truly, @monkchips at @redmonk is one of the best out there. His conversation wi…
+2022-04-29 14:06:28 [Twitter4J Async Dispatcher[0]] INFO  t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AlwaysWouldBe: Spring night on the Upper West Side. #NYC https://t.co/rAWUTbehwh
+2022-04-29 14:06:29 [SpringApplicationShutdownHook] INFO  t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream

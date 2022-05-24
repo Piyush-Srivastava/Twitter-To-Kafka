@@ -1,0 +1,1208 @@
+2022-05-23 15:56:49 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11877 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 15:56:49 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 15:56:49 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+2022-05-23 15:56:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 15:56:49 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:749)
+	at java.base/java.util.Map.of(Map.java:1307)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig.adminClient(KafkaAdminConfig.java:28)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$d1951d2d.CGLIB$adminClient$0(<generated>)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$d1951d2d$$FastClassBySpringCGLIB$$c8fe243a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$d1951d2d.adminClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+2022-05-23 15:57:14 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11882 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 15:57:14 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 15:57:15 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+2022-05-23 15:57:15 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 15:57:15 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:749)
+	at java.base/java.util.Map.of(Map.java:1307)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig.adminClient(KafkaAdminConfig.java:27)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e.CGLIB$adminClient$0(<generated>)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e$$FastClassBySpringCGLIB$$99c6ab30.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e.adminClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+2022-05-23 15:57:31 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11887 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 15:57:31 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 15:57:32 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+2022-05-23 15:57:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 15:57:32 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:749)
+	at java.base/java.util.Map.of(Map.java:1307)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig.adminClient(KafkaAdminConfig.java:27)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e.CGLIB$adminClient$0(<generated>)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e$$FastClassBySpringCGLIB$$99c6ab30.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$41e2c19e.adminClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+2022-05-23 15:59:38 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11910 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 15:59:38 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 15:59:38 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 15:59:39 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+2022-05-23 15:59:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 15:59:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:749)
+	at java.base/java.util.Map.of(Map.java:1307)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig.adminClient(KafkaAdminConfig.java:27)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$2d82bbb7.CGLIB$adminClient$0(<generated>)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$2d82bbb7$$FastClassBySpringCGLIB$$71853cd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.piyush.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$2d82bbb7.adminClient(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+2022-05-23 16:07:17 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11952 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:07:17 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:07:17 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:07:18 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:07:18 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:07:18 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:07:18 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653302238917
+2022-05-23 16:07:18 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.retry.support.RetryTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:07:19 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:07:19 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 16:07:19 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in com.piyush.microservices.kafka.admin.client.KafkaAdminClient required a bean of type 'org.springframework.retry.support.RetryTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.retry.support.RetryTemplate' in your configuration.
+
+2022-05-23 16:39:57 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11970 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:39:57 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:39:57 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:39:57 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:39:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:39:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:39:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653304198122
+2022-05-23 16:39:58 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.retry.support.RetryTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:39:58 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:39:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 16:39:58 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in com.piyush.microservices.kafka.admin.client.KafkaAdminClient required a bean of type 'org.springframework.retry.support.RetryTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.retry.support.RetryTemplate' in your configuration.
+
+2022-05-23 16:40:04 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11974 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:40:04 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:40:05 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:40:12 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:40:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:40:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:40:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653304212323
+2022-05-23 16:40:12 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.retry.support.RetryTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:40:12 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:40:28 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11982 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:40:28 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:40:28 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:40:29 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:40:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:40:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:40:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653304229314
+2022-05-23 16:40:29 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.retry.support.RetryTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:40:29 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:40:29 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 16:40:29 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of constructor in com.piyush.microservices.kafka.admin.client.KafkaAdminClient required a bean of type 'org.springframework.retry.support.RetryTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.retry.support.RetryTemplate' in your configuration.
+
+2022-05-23 16:42:58 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 11999 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:42:58 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:42:58 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:42:59 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:42:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:42:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:42:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653304379297
+2022-05-23 16:42:59 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaStreamInitializer' defined in file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient': Unsatisfied dependency expressed through field 'retryTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.retry.support.RetryTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call. Call: fetchMetadata
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:42:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:42:59 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 16:42:59 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field retryTemplate in com.piyush.microservices.kafka.admin.client.KafkaAdminClient required a bean of type 'org.springframework.retry.support.RetryTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.retry.support.RetryTemplate' in your configuration.
+
+2022-05-23 16:46:12 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 12146 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-23 16:46:12 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/init/impl/KafkaStreamInitializer.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/listener/TwitterKafkaStatusListener.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/runner/impl/TwitterKafkaStreamRunner.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes/com/piyush/microservices/twitter/to/kafka/service/transformer/TwitterStatusToAvroTransformer.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaConfigData.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/KafkaProducerConfigData.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/RetryConfigData.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/app-config-data/target/classes/com/piyush/microservices/config/TwitterToKafkaServiceConfigData.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/client/KafkaAdminClient.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/KafkaAdminConfig.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-admin/target/classes/com/piyush/microservices/kafka/admin/config/WebClientConfig.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/common-config/target/classes/com/piyush/microservices/common/config/RetryConfig.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/KafkaProducerConfig.class]
+2022-05-23 16:46:12 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/kafka/kafka-producer/target/classes/com/piyush/microservices/kafka/producer/config/service/impl/TwitterKafkaProducer.class]
+2022-05-23 16:46:13 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-05-23 16:46:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.1
+2022-05-23 16:46:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8e30984f43e64d8b
+2022-05-23 16:46:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1653304573141
+2022-05-23 16:46:13 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-05-23 16:46:13 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.41 seconds (JVM running for 1.802)
+2022-05-23 16:46:13 [main] INFO  c.p.m.t.t.k.s.TwitterToKafkaServiceApplication - App run...
+2022-05-23 16:46:13 [main] INFO  c.p.m.k.a.client.KafkaAdminClient - Creating 1 topics, attempt 0
+2022-05-23 16:46:13 [main] INFO  c.p.m.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-05-23 16:46:15 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:315)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:152)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:383)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:224)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:437)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:265)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:58)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:77)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:272)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.block(Mono.java:1706)
+	at com.piyush.microservices.kafka.admin.client.KafkaAdminClient.getSchemaRegistryStatus(KafkaAdminClient.java:135)
+	at com.piyush.microservices.kafka.admin.client.KafkaAdminClient.checkSchemaRegistry(KafkaAdminClient.java:121)
+	at com.piyush.microservices.twitter.to.kafka.service.init.impl.KafkaStreamInitializer.init(KafkaStreamInitializer.java:27)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:777)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.piyush.microservices.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+Caused by: java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.ensureAvailability(MacOSDnsServerAddressStreamProvider.java:110)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:120)
+	... 32 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos_aarch_64
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:224)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:92)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<clinit>(MacOSDnsServerAddressStreamProvider.java:77)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders$1.run(DnsServerAddressStreamProviders.java:50)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:46)
+	... 27 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:224)
+		at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:95)
+		... 33 common frames omitted
+	Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos.jnilib
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:166)
+		... 34 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: [/Users/piyushsrivastava/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java, .]
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+			at java.base/java.lang.System.loadLibrary(System.java:1873)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:376)
+			at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:146)
+			... 34 common frames omitted
+			Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: [/Users/piyushsrivastava/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java, .]
+				at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+				at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+				at java.base/java.lang.System.loadLibrary(System.java:1873)
+				at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+				at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+				at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+				at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:410)
+				at java.base/java.security.AccessController.doPrivileged(Native Method)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:402)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:368)
+				... 35 common frames omitted
+Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos_aarch_64.jnilib
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:166)
+	... 34 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: [/Users/piyushsrivastava/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java, .]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+		at java.base/java.lang.System.loadLibrary(System.java:1873)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:376)
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:146)
+		... 34 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: [/Users/piyushsrivastava/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java, .]
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2673)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+			at java.base/java.lang.System.loadLibrary(System.java:1873)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+			at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+			at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+			at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:410)
+			at java.base/java.security.AccessController.doPrivileged(Native Method)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:402)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:368)
+			... 35 common frames omitted
+2022-05-23 16:46:17 [main] INFO  c.p.m.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-05-23 16:46:17 [main] INFO  c.p.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-05-23 16:46:17 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-05-23 16:46:22 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2022-05-23 16:46:22 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2022-05-23 16:46:22 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text "Bg"
+
+"Özlüyorum seni.. 
+En derinden,
+çok derinden,
+şuursuzca.!" 
+
+Franz Kafka sending to kafka topic twitter-topic
+2022-05-23 16:46:22 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 733310678371602432, "id": 1528696312719364097, "text": "\"Bg\"\n\n\"Özlüyorum seni.. \nEn derinden,\nçok derinden,\nşuursuzca.!\" \n\nFranz Kafka", "createdAt": 1653304577000}' to topic='twitter-topic'
+2022-05-23 16:46:22 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text is a locket is a spring is a video games is a toothbrush sending to kafka topic twitter-topic
+2022-05-23 16:46:22 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1393988803791097857, "id": 1528696313335844864, "text": "is a locket is a spring is a video games is a toothbrush", "createdAt": 1653304577000}' to topic='twitter-topic'
+2022-05-23 16:46:24 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @846kizuQ: 色々な熱い思いを語り合わせて貰いました👊
+
+「プロセカ」の大会を見守った人たち――CS 2022 Springを支えた松丸亮吾さん，佐藤日向さん，柴田将平さん，社築さんにインタビュー https://t.co/LZe9ReCdjr @4GamerNe… sending to kafka topic twitter-topic
+2022-05-23 16:46:24 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1498822607956680717, "id": 1528696321200168960, "text": "RT @846kizuQ: 色々な熱い思いを語り合わせて貰いました👊\n\n「プロセカ」の大会を見守った人たち\u2015\u2015CS 2022 Springを支えた松丸亮吾さん，佐藤日向さん，柴田将平さん，社築さんにインタビュー https://t.co/LZe9ReCdjr @4GamerNe\u2026", "createdAt": 1653304579000}' to topic='twitter-topic'
+2022-05-23 16:46:25 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text https://t.co/U5o2eutVnE sending to kafka topic twitter-topic
+2022-05-23 16:46:25 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1497279624463663107, "id": 1528696323393957889, "text": "https://t.co/U5o2eutVnE", "createdAt": 1653304579000}' to topic='twitter-topic'
+2022-05-23 16:46:26 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @AlmanachDuJour: « Ce soir je me suis lavé les mains trois fois de suite dans la salle de bains par ennui. »
+- Kafka, 23 mai 1912 https:… sending to kafka topic twitter-topic
+2022-05-23 16:46:26 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3059549427, "id": 1528696328771055616, "text": "RT @AlmanachDuJour: « Ce soir je me suis lavé les mains trois fois de suite dans la salle de bains par ennui. »\n- Kafka, 23 mai 1912 https:\u2026", "createdAt": 1653304581000}' to topic='twitter-topic'
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CompanyTala: A big seller from my shop is this women’s mystery box. Perfect for a surprise treat this Spring/Summer. Get yours from the… sending to kafka topic twitter-topic
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1369282402732957701, "id": 1528696332755542016, "text": "RT @CompanyTala: A big seller from my shop is this women\u2019s mystery box. Perfect for a surprise treat this Spring/Summer. Get yours from the\u2026", "createdAt": 1653304582000}' to topic='twitter-topic'
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @AlleganyBB: https://t.co/iH9v1rQxbj sending to kafka topic twitter-topic
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1477333074400747522, "id": 1528696332772380672, "text": "RT @AlleganyBB: https://t.co/iH9v1rQxbj", "createdAt": 1653304582000}' to topic='twitter-topic'
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I wanna be your mother father and sister
+誰よりそばに
+I wanna be your everything
+ねぇダーリン 隣にいるから
+「ソング・フォー・ダーリン」／Hanah Spring sending to kafka topic twitter-topic
+2022-05-23 16:46:27 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2689977324, "id": 1528696333972160512, "text": "I wanna be your mother father and sister\n誰よりそばに\nI wanna be your everything\nねぇダーリン 隣にいるから\n「ソング・フォー・ダーリン」／Hanah Spring", "createdAt": 1653304582000}' to topic='twitter-topic'
+2022-05-23 16:46:29 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @spice_topics: 奥田民生、Saucy Dog、スピッツが競演ーーZepp Namba（OSAKA）10周年企画『ここからLIVEができるなら -Spring lucky Monday-』で感じたライブができている喜び https://t.co/pNkFlMq… sending to kafka topic twitter-topic
+2022-05-23 16:46:29 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1443510352780558339, "id": 1528696341617987585, "text": "RT @spice_topics: 奥田民生、Saucy Dog、スピッツが競演ーーZepp Namba（OSAKA）10周年企画『ここからLIVEができるなら -Spring lucky Monday-』で感じたライブができている喜び https://t.co/pNkFlMq\u2026", "createdAt": 1653304584000}' to topic='twitter-topic'
+2022-05-23 16:46:29 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @configuroweb: No. 2334 programming meme #programmingjoke #code #coding #javascript #python #datascience #programming #programmer #joke… sending to kafka topic twitter-topic
+2022-05-23 16:46:29 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1314164146934513665, "id": 1528696343501410304, "text": "RT @configuroweb: No. 2334 programming meme #programmingjoke #code #coding #javascript #python #datascience #programming #programmer #joke\u2026", "createdAt": 1653304584000}' to topic='twitter-topic'
+2022-05-23 16:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PBSKIDS: Spring is a great time for your family to try out hands-on learning activities designed to help kids appreciate nature and lea… sending to kafka topic twitter-topic
+2022-05-23 16:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1528525396488118273, "id": 1528696344759742466, "text": "RT @PBSKIDS: Spring is a great time for your family to try out hands-on learning activities designed to help kids appreciate nature and lea\u2026", "createdAt": 1653304585000}' to topic='twitter-topic'
+2022-05-23 16:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text My louis vuitton mini capucines bag in lizard Louis vuitton spring summer 2022 dream closet bali 2022💖🇮🇩❤️ https://t.co/OZOFa2C9uf sending to kafka topic twitter-topic
+2022-05-23 16:46:30 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 38380691, "id": 1528696343614529536, "text": "My louis vuitton mini capucines bag in lizard Louis vuitton spring summer 2022 dream closet bali 2022💖🇮🇩❤️ https://t.co/OZOFa2C9uf", "createdAt": 1653304584000}' to topic='twitter-topic'
+2022-05-23 16:46:32 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】
+
+🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓いよいよ、5/29(日)23:59受付終了！🍓
+🍓お忘れのないようご注意ください！✨
+
+⚠一部の商品に、品切れがございます<(_ _)… sending to kafka topic twitter-topic
+2022-05-23 16:46:32 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1436927562194690052, "id": 1528696353659887617, "text": "RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】\n\n🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓\n\n🍓いよいよ、5/29(日)23:59受付終了！🍓\n🍓お忘れのないようご注意ください！✨\n\n⚠一部の商品に、品切れがございます<(_ _)\u2026", "createdAt": 1653304587000}' to topic='twitter-topic'
+2022-05-23 16:46:33 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】
+
+🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓いよいよ、5/29(日)23:59受付終了！🍓
+🍓お忘れのないようご注意ください！✨
+
+⚠一部の商品に、品切れがございます<(_ _)… sending to kafka topic twitter-topic
+2022-05-23 16:46:33 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1351091588303384581, "id": 1528696359020556290, "text": "RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】\n\n🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓\n\n🍓いよいよ、5/29(日)23:59受付終了！🍓\n🍓お忘れのないようご注意ください！✨\n\n⚠一部の商品に、品切れがございます<(_ _)\u2026", "createdAt": 1653304588000}' to topic='twitter-topic'
+2022-05-23 16:46:34 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @fraveris: 'Spring Tuscany' by Raffaele Fiore https://t.co/RmiiSCX64q sending to kafka topic twitter-topic
+2022-05-23 16:46:34 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 714296870, "id": 1528696365076738049, "text": "RT @fraveris: 'Spring Tuscany' by Raffaele Fiore https://t.co/RmiiSCX64q", "createdAt": 1653304589000}' to topic='twitter-topic'
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @EuropeanSeed: We are now counting the seventh year out of eight with spring drought in the Northern part of Europe. Nobody knows how de… sending to kafka topic twitter-topic
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 384846309, "id": 1528696369820598272, "text": "RT @EuropeanSeed: We are now counting the seventh year out of eight with spring drought in the Northern part of Europe. Nobody knows how de\u2026", "createdAt": 1653304591000}' to topic='twitter-topic'
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Spring 11 x 14 Tulips Pointillism Art Decor, Art Print Unframed for Home by CherryTreeArtGallery via @Etsy https://t.co/FIEf6QIzAf sending to kafka topic twitter-topic
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1513467066866618373, "id": 1528696370462396418, "text": "Spring 11 x 14 Tulips Pointillism Art Decor, Art Print Unframed for Home by CherryTreeArtGallery via @Etsy https://t.co/FIEf6QIzAf", "createdAt": 1653304591000}' to topic='twitter-topic'
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @spice_mu: 奥田民生、Saucy Dog、スピッツが競演ーーZepp Namba（OSAKA）10周年企画『ここからLIVEができるなら -Spring lucky Monday-』で感じたライブができている喜び https://t.co/rop5p1HDxc… sending to kafka topic twitter-topic
+2022-05-23 16:46:36 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1443510352780558339, "id": 1528696371221393408, "text": "RT @spice_mu: 奥田民生、Saucy Dog、スピッツが競演ーーZepp Namba（OSAKA）10周年企画『ここからLIVEができるなら -Spring lucky Monday-』で感じたライブができている喜び https://t.co/rop5p1HDxc\u2026", "createdAt": 1653304591000}' to topic='twitter-topic'
+2022-05-23 16:46:37 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @9352iii: Dior spring 23 กับชุดที่น่าจะเหมาะกับวินเนอร์ dior รอบนี้คือสีจี๊ดจ๊าดมาก
+Yoon                      Hoony
+Mino… sending to kafka topic twitter-topic
+2022-05-23 16:46:37 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2790829282, "id": 1528696374241284096, "text": "RT @9352iii: Dior spring 23 กับชุดที่น่าจะเหมาะกับวินเนอร์ dior รอบนี้คือสีจี๊ดจ๊าดมาก\nYoon                      Hoony\nMino\u2026", "createdAt": 1653304592000}' to topic='twitter-topic'
+2022-05-23 16:46:38 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @mallariaubrey @AudacityRaee @ahmila_ TRADING/ SELLING hal 19 and spring 22 sending to kafka topic twitter-topic
+2022-05-23 16:46:38 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1487024074979409920, "id": 1528696378372673536, "text": "@mallariaubrey @AudacityRaee @ahmila_ TRADING/ SELLING hal 19 and spring 22", "createdAt": 1653304593000}' to topic='twitter-topic'
+2022-05-23 16:46:38 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @momentsofence: a blow of spring air 🍃🌷 https://t.co/M6SE41SioU sending to kafka topic twitter-topic
+2022-05-23 16:46:38 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1084579755205234689, "id": 1528696378515496960, "text": "RT @momentsofence: a blow of spring air 🍃🌷 https://t.co/M6SE41SioU", "createdAt": 1653304593000}' to topic='twitter-topic'
+2022-05-23 16:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】
+
+🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓いよいよ、5/29(日)23:59受付終了！🍓
+🍓お忘れのないようご注意ください！✨
+
+⚠一部の商品に、品切れがございます<(_ _)… sending to kafka topic twitter-topic
+2022-05-23 16:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1501886844627132418, "id": 1528696382445395968, "text": "RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】\n\n🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓\n\n🍓いよいよ、5/29(日)23:59受付終了！🍓\n🍓お忘れのないようご注意ください！✨\n\n⚠一部の商品に、品切れがございます<(_ _)\u2026", "createdAt": 1653304594000}' to topic='twitter-topic'
+2022-05-23 16:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Precioso ❣️ sending to kafka topic twitter-topic
+2022-05-23 16:46:39 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1456717175549571072, "id": 1528696382701420544, "text": "Precioso ❣️", "createdAt": 1653304594000}' to topic='twitter-topic'
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Who doesn't love birdsong 🐦🎶so am starting this week with this lovely vid/recording. Some birds seem to sing quite early too, I've heard them at 2 or 3 a.m.
+
+Hope everyone has a peaceful Monday! sending to kafka topic twitter-topic
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1046350336485658625, "id": 1528696385830326272, "text": "Who doesn't love birdsong 🐦🎶so am starting this week with this lovely vid/recording. Some birds seem to sing quite early too, I've heard them at 2 or 3 a.m.\n\nHope everyone has a peaceful Monday!", "createdAt": 1653304594000}' to topic='twitter-topic'
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text javaしか知らないないので
+新しい言語を学ぼうと思います。
+
+ #マコなり社長MacBookプレゼント sending to kafka topic twitter-topic
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 414638742, "id": 1528696386065006592, "text": "javaしか知らないないので\n新しい言語を学ぼうと思います。\n\n #マコなり社長MacBookプレゼント", "createdAt": 1653304594000}' to topic='twitter-topic'
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @NaughtyFoxDE: Giveaway 2/2
+🌷🌸 SPRING GIVEAWAY 🌸🌷
+We thank you all for your support and will give you the chance to win this Medium Size… sending to kafka topic twitter-topic
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1184090450908594176, "id": 1528696388489551872, "text": "RT @NaughtyFoxDE: Giveaway 2/2\n🌷🌸 SPRING GIVEAWAY 🌸🌷\nWe thank you all for your support and will give you the chance to win this Medium Size\u2026", "createdAt": 1653304595000}' to topic='twitter-topic'
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】
+
+🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓いよいよ、5/29(日)23:59受付終了！🍓
+🍓お忘れのないようご注意ください！✨
+
+⚠一部の商品に、品切れがございます<(_ _)… sending to kafka topic twitter-topic
+2022-05-23 16:46:40 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375495831101480961, "id": 1528696390050025472, "text": "RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】\n\n🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓\n\n🍓いよいよ、5/29(日)23:59受付終了！🍓\n🍓お忘れのないようご注意ください！✨\n\n⚠一部の商品に、品切れがございます<(_ _)\u2026", "createdAt": 1653304595000}' to topic='twitter-topic'
+2022-05-23 16:46:41 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Louis vuitton spring summer 2022 dream closet bali 2022💖🇮🇩❤️ https://t.co/x3UALpvukX sending to kafka topic twitter-topic
+2022-05-23 16:46:41 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 38380691, "id": 1528696390775230464, "text": "Louis vuitton spring summer 2022 dream closet bali 2022💖🇮🇩❤️ https://t.co/x3UALpvukX", "createdAt": 1653304596000}' to topic='twitter-topic'
+2022-05-23 16:46:42 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】
+
+🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓いよいよ、5/29(日)23:59受付終了！🍓
+🍓お忘れのないようご注意ください！✨
+
+⚠一部の商品に、品切れがございます<(_ _)… sending to kafka topic twitter-topic
+2022-05-23 16:46:42 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1142397294626557952, "id": 1528696396659843072, "text": "RT @STPR_records: 【🍓いちごのおうじ商店よりお知らせ🍓】\n\n🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓\n\n🍓いよいよ、5/29(日)23:59受付終了！🍓\n🍓お忘れのないようご注意ください！✨\n\n⚠一部の商品に、品切れがございます<(_ _)\u2026", "createdAt": 1653304597000}' to topic='twitter-topic'
+2022-05-23 16:46:42 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @846kizuQ: 色々な熱い思いを語り合わせて貰いました👊
+
+「プロセカ」の大会を見守った人たち――CS 2022 Springを支えた松丸亮吾さん，佐藤日向さん，柴田将平さん，社築さんにインタビュー https://t.co/LZe9ReCdjr @4GamerNe… sending to kafka topic twitter-topic
+2022-05-23 16:46:42 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2607555950, "id": 1528696397595222017, "text": "RT @846kizuQ: 色々な熱い思いを語り合わせて貰いました👊\n\n「プロセカ」の大会を見守った人たち\u2015\u2015CS 2022 Springを支えた松丸亮吾さん，佐藤日向さん，柴田将平さん，社築さんにインタビュー https://t.co/LZe9ReCdjr @4GamerNe\u2026", "createdAt": 1653304597000}' to topic='twitter-topic'
+2022-05-23 16:46:43 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @EdiMahaMG: macam iya aja, tanah melayu itu sudah lama antri mau lepas dari kungkungan dan hegemoni java, jangan dikira butuh banget bel… sending to kafka topic twitter-topic
+2022-05-23 16:46:43 [Twitter4J Async Dispatcher[0]] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1417444107958378500, "id": 1528696400455737345, "text": "RT @EdiMahaMG: macam iya aja, tanah melayu itu sudah lama antri mau lepas dari kungkungan dan hegemoni java, jangan dikira butuh banget bel\u2026", "createdAt": 1653304598000}' to topic='twitter-topic'
+2022-05-23 16:46:43 [SpringApplicationShutdownHook] INFO  c.p.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2022-05-23 16:46:43 [SpringApplicationShutdownHook] INFO  c.p.m.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-05-23 16:46:43 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-05-23 16:46:43 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-05-23 16:46:43 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-05-23 16:46:43 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-05-23 16:46:43 [reactor-http-nio-3] WARN  r.n.http.client.HttpClientConnect - [906edf94-1, L:0.0.0.0/0.0.0.0:63224] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed DURING response

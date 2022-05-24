@@ -1,0 +1,260 @@
+2022-05-02 14:14:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23395 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:14:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:14:51 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:14:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:14:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:15:13 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23404 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:15:13 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:15:13 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:15:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:15:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:15:20 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23409 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:15:20 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:15:20 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:15:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:15:20 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:17:07 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23442 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:17:07 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:17:08 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:17:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:17:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:17:37 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23449 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:17:37 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:17:37 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:17:37 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:17:37 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:17:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23454 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:17:50 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:17:50 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:17:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:17:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:19:32 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23473 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:19:32 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:19:32 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:19:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:19:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:19:38 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23478 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:19:38 [main] INFO  t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:19:38 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-05-02 14:19:38 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-02 14:19:38 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in TwitterToKafkaServiceApplication required a bean of type 'TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'TwitterToKafkaServiceConfigData' in your configuration.
+
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.15 on Piyushs-Air with PID 23535 (/Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo/twitter-to-kafka-service/target/classes started by piyushsrivastava in /Users/piyushsrivastava/Desktop/Microservices/event-driven-project/microservices-demo)
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.459 seconds (JVM running for 0.732)
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App run...
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2022-05-02 14:22:16 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-05-02 14:22:16 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, ElasticSearch]
+2022-05-02 14:22:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2022-05-02 14:22:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2022-05-02 14:22:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I- I- I s-s-smell savory spring onion pancakes. 😭 It's good to be alive. Just for the pancakes, fellow humans. 😔👍👍👍
+2022-05-02 14:22:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pYSLrada: skirts by Roberto Cavalli spring summer 2000s https://t.co/pF6TVxsJT0
+2022-05-02 14:22:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @maddybellwoar: I got a new sketchbook! 😊 Starting it off with some happy spring paintings 💜🌿🌼 https://t.co/iSAsn3EOBI
+2022-05-02 14:22:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @asolegrey: This would be a dreamy spring date 🌸 https://t.co/jSHpTEcdQG
+2022-05-02 14:22:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yukigiku0215n: 【譲渡】あんスタ　フィーチャースカウト　缶バッジ　Spring 2020
+
+譲)みか　宗　レオ
+求)定価＋送料
+
+Valkyrieはできればまとめてお譲りできるとありがたいです。
+キャラごとでのお譲りとなります。
+お気軽にお声掛けください。…
+2022-05-02 14:22:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @kyokominor Therefore, spring in my apartment comes from February🙊
+
+Heating will be turned off ~May 16th.
+..............
+Is it cold at home in your region in winter?..
+2022-05-02 14:22:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @EruruFm: 【交換】
+あんスタ　フィーチャースカウト缶バッジ　2020 spring   idol  casual
+
+【譲】画像参照
+★晃牙★茨★泉★レオ★巽、宗、奏汰、北斗
+
+【求】各同種みか各4
+
+※★は現相互FF様のみ。
+※i⇆i、c⇆cの交換。
+
+郵送希望…
+2022-05-02 14:22:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @maddybellwoar: I got a new sketchbook! 😊 Starting it off with some happy spring paintings 💜🌿🌼 https://t.co/iSAsn3EOBI
+2022-05-02 14:22:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sy10rk4: 【交換/譲渡】あんスタ テーマスカウト 缶バッジ 2020 SPRING 20box
+
+譲)颯馬20 ☆創7
+求)凛月 or 定価+送料
+
+☆は交換のみ。
+🌻都内手渡し or 郵送
+お気軽にお声掛けくださいませ⑅ https://t.co/ZAxJMf…
+2022-05-02 14:22:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @StellaMoris1: Please share far and wide.
+
+Support @Consortiumnews through alternative means now:
+
+https://t.co/50tj0MTJxt
+2022-05-02 14:22:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Que du beau monde 💕
+2022-05-02 14:22:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @EruruFm: 【交換】
+あんスタ　テーマスカウト缶バッジ　2020 spring 
+
+【譲】
+idol/★燐音、司
+
+casual/司、紅郎、創
+
+【求】こはく(i2、c1)
+
+※★は現相互FF様のみ
+※i⇆i、c⇆cの交換
+
+郵送希望。FF外様はプロカ確認お願いし…
+2022-05-02 14:22:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @STPR_records: 🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓日本武道館🍓
+🍓会場販売 2日目がスタートしました！！✨
+
+🍓お買い物の流れは画像をチェック！✨
+
+⚠整理券の受付は終了しております<(_ _)>
+
+👑ついに！！✨✨
+すとぱ🍓…
+2022-05-02 14:22:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @STPR_records: 🍓すとぷり 2022 Spring オフィシャルグッズ!!🍓
+
+🍓日本武道館🍓
+🍓会場販売 2日目がスタートしました！！✨
+
+🍓お買い物の流れは画像をチェック！✨
+
+⚠整理券の受付は終了しております<(_ _)>
+
+👑ついに！！✨✨
+すとぱ🍓…
+2022-05-02 14:22:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Сезон открыт 🏄🏼‍♂️ #WAKEUPWORLD #spring https://t.co/0SeIh7pSjR
+2022-05-02 14:22:24 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
